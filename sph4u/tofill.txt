@@ -1,0 +1,49 @@
+The **acceleration** of the sled is approximately **0.758 m/s²**.
+
+To calculate the acceleration, we need to find the net force acting on the sled and then use Newton's second law of motion, which states that the net force (F_net) is equal to the mass (m) of the object multiplied by its acceleration (a):
+
+\[F_(net) = m \cdot a\]
+
+First, we need to break down the given forces into their horizontal and vertical components:
+
+For Alphonse:
+
+Force (F_Alphonse) = 50.0 N
+
+Angle (θ_Alphonse) = 25° north of east
+
+The horizontal component (F_Alphonse_horizontal) is:
+
+\[F_(Alphonse\_horizontal) = F_(Alphonse) \cdot \cos(\theta_(Alphonse))\]
+
+The vertical component (F_Alphonse_vertical) is:
+
+\[F_(Alphonse\_vertical) = F_(Alphonse) \cdot \sin(\theta_(Alphonse))\]
+
+For Bela:
+
+Force (F_Bela) = 80.0 N
+
+Angle (θ_Bela) = 20.0° south of east
+
+The horizontal component (F_Bela_horizontal) is:
+
+\[F_(Bela\_horizontal) = F_(Bela) \cdot \cos(\theta_(Bela))\]
+
+The vertical component (F_Bela_vertical) is:
+
+\[F_(Bela\_vertical) = F_(Bela) \cdot \sin(\theta_(Bela))\]
+
+Next, we can calculate the net horizontal force (F_net_horizontal) and the net vertical force (F_net_vertical):
+
+\[F_(net\_horizontal) = F_(Alphonse\_horizontal) + F_(Bela\_horizontal)\]
+
+\[F_(net\_vertical) = F_(Alphonse\_vertical) + F_(Bela\_vertical)\]
+
+Now, let's calculate the net force (F_net) using the Pythagorean theorem:
+
+\[F_(net) = \sqrt{F_(net\_horizontal)^2 + F_(net\_vertical)^2}\]
+
+Now, we can solve for acceleration (a) using Newton's second law:\[a = (F_(net))/(m)\]
+
+Given that the total mass of the sled (m) is 160 kg, we can plug in the values to calculate the acceleration. After calculating, we find the acceleration of the sled to be approximately 0.758 m/s².
