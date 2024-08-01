@@ -1,0 +1,227 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{siunitx}
+\usepackage{textcomp}
+\usepackage{tikz}
+
+
+\usetikzlibrary{automata,positioning}
+
+% Basic Document Settings
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ \hmwkClassInstructor}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+% Create Problem Sections
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Asgnmt. 5}
+\newcommand{\hmwkDueDate}{August 3, 2024}
+\newcommand{\hmwkClass}{SPH4U}
+\newcommand{\hmwkClassTime}{Unit 1}
+\newcommand{\hmwkClassInstructor}{Naitrim Persaud}
+\newcommand{\hmwkAuthorName}{\textbf{Gregory Olegovich Polstvin}}
+
+% Title Page
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\hmwkAuthorName}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability cmds 
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\begin{homeworkProblem}
+
+A hiker used a compass to orient himself as he walked
+\SI{3.00}{\km} in a direction \SI{50.0}{\degree} north of west,
+and then an additional \SI{2.00}{\km} in a direction \SI{20.0}{\degree}
+south of west. The trip took \SI{1.25}{\hour}. Calculate
+the magnitude and direction of the hiker's velocity
+of the hiker using vector components. \\
+
+\textbf{Solution} \\
+
+The magnitude and direction of the hiker's velocity is \SI{3.31}{\km\hour}
+and \SI{23}{\degree} respectively.
+\\
+
+
+    \textbf{Sum of the displacement in the $x$ axis}
+     \[
+        x = \SI{3.00}{\km} \cdot \cos\SI{50}{\degree} -
+        \SI{2.00}{\km} \cdot \cos\SI{20}{\degree}
+     \]
+     \[
+     = \SI{-3.81}{\km}
+     \] 
+     \\
+    \textbf{Sum of the displacement in the $y$ axis}
+    \[
+          y = \SI{3.00}{\km} \cdot \sin\SI{50}{\degree} -
+          \SI{2.00}{\km} \cdot \sin\SI{20}{\degree}
+    \]
+    \[
+            = \SI{1.614}{\km}
+    \]
+    \\
+
+    \textbf{Magnitude of the resulting displacement}
+    \[
+        D = \sqrt{(y^2 + x^2)}
+    \]
+    \[
+        = \sqrt{(\SI{-3.81}{\km})^2 + (\SI{1.61}{\km})^2} 
+    \]
+  \[
+        = \sqrt{14.5 + 2.59}
+      \]
+    \[
+        = \SI{4.13}{\km}
+        \]
+    \\
+
+    \textbf{Velocity of the hiker}
+    \]
+    \\
+    \textbf{Direction of the displacement}
+    \[
+    \]
+    \\
+\textbf{
+    Thus, the magnitude and direction of the hiker's velocity is 3.31 km/h and  23⁰ respectively.
+
+What is the magnitude of the hikers velocity?
+
+The resultant displacement of the hiker is calculated as follows;
+
+The sum of the displacement in y - direction;
+
+Y = 3 km x sin(50) - 2 km x sin(20)
+
+Y = 1.614 km
+
+The sum of the displacement in x - direction;
+
+X = -3 km x cos(50) - 2 km x cos(20)
+
+X = - 3.81 km
+
+The magnitude of the resultant displacement;
+
+D = √ (Y² + X²)
+
+D = √ ( 1.614² + 3.81²)
+
+D = 4.14 km
+
+The velocity of the hiker is calculated as follows;
+
+v = D/t
+
+v = 4.14 km / 1.25 hrs
+
+v = 3.31 km/h
+
+The direction of the displacement;
+
+tan θ = Y/X
+
+θ = arc tan (Y/X)
+
+θ = arc tan (1.614 / 3.81)
+
+θ = 23⁰
+
+\end{homeworkProblem}
+
+\end{document}
